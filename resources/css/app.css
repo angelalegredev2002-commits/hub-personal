@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ======================================================= */
+/* FIX OBLIGATORIO: BLOQUEAR WINDOW.PRINT A NIVEL DE CSS   */
+/* ======================================================= */
+@media print {
+    /* Oculta completamente el contenido, lo que debería detener el diálogo
+       al no tener nada que imprimir con formato. */
+    body {
+        display: none !important;
+    }
+}
